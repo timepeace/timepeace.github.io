@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+#cta {
+    color: white;
+}
+
+.jumbotron-custom-padding {
+    padding: 0em;
+}
+
+#headline {
+    background-image:url(maldives.jpg);
+    background-size:cover;
+    padding: 2em;
+}
+
+.pad-lg {
+    padding: 3em;
+}
+
+.pad-sm {
+    padding: 1em;
+}
+
+.nomargin {
+    margin: 0px;
+}
