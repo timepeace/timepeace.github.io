@@ -17,9 +17,9 @@ var readyHandler = function() {
 };
 
 var submit = function() {
+    ga('send', 'event', 'CTA', 'Join');
     var email = encodeURIComponent($("#join input").val());
     $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
-    _gaq.push(['_trackEvent', 'CTA', 'Join']);
     $('#thankyou').show();
     $('#join').hide();
 };
