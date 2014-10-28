@@ -1,3 +1,7 @@
+var googleFormEmailEntry = 'entry.897871725';
+var googleFormUrl = 'https://docs.google.com/forms/d/1Duae8q3dBV8TAo9AfJpxvZRsF7j8NNw8GliEkTJUX6A/formResponse';
+
+
 var joinButtonHandler = function(e) {
     submit();
 };
@@ -14,9 +18,17 @@ var readyHandler = function() {
 };
 
 var submit = function() {
-    var email = $("#join input").val();
-    $("#join").hide();
-    $("#thankyou").show();
+    var email = encodeURIComponent($("#join input").val());
+    var data = {};
+    data[googleFormEmailEntry] = email;
+    $.ajax(googleFormUrl, {
+        data: data,
+        dataType: 'xml',
+        type: 'POST'
+    }).done(function() {
+        $("#join").hide();
+        $("#thankyou").show();
+    });
 };
 
 $(readyHandler);
