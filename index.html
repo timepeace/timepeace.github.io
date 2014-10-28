@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="index.css">
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="index.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>TimePeace</title>
@@ -15,26 +16,27 @@
                 <h1>TimePeace</h1>  
                 <p>Stress reduction, right on time</p>
             </div>
-            <div class="row" style="background-color:#99FFCC;">
+            <div class="row vp" style="background-color:#99FFCC;">
                 <div class="col-md-6 col-md-offset-3">
-                    <h3 class="text-uppercase">Event preparation</h3>
+                    <h4 class="text-uppercase">Event preparation</h4>
                     <p>Don't let stress or anxiety get in the way of preparing
-                    for important events like job interviews, exams, or hot
-                    dates. We'll help you stay focused, and get the things you 
-                    need to get done, done.</p>
+                    for important events like job interviews or exams. We'll
+                    help you stay focused, and break your milestones down
+                    into bite-sized tasks.</p>
                 </div>
             </div>
-            <div class="row" style="background-color:#66FFFF">
+            <div class="row vp" style="background-color:#66FFFF">
                 <div class="col-md-6 col-md-offset-3">
-                    <h3 class="text-uppercase">Timely stress relief</h3>
-                    <p>Making time to relax can be challenging. Let us help you
-                    find the time with our stress-relief tips and exercises,
-                    delivered to your mobile phone.</p>
+                    <h4 class="text-uppercase">Set and accomplish goals</h4>
+                    <p>Making time to relax, go for walks, or learn a new
+                    language can be challenging. TimePeace makes it easy by
+                    creating quick, fun tasks to help you move towards your
+                    goal every day.
                 </div>
             </div>
-            <div class="row" style="background-color:#FFCCFF">
+            <div class="row vp" style="background-color:#FFCCFF">
                 <div class="col-md-6 col-md-offset-3">
-                    <h3 class="text-uppercase">Calendar integration</h3>
+                    <h4 class="text-uppercase">Calendar integration</h4>
                     <p>Love your existing time management system? No problem.
                     Our platform integrates with your favorite calendar, such as
                     Google, Apple, and Sunrise.</p>
@@ -43,11 +45,18 @@
             <div class="pad-lg row" id="cta">
                 <h2>Sign up now, get early access</h2>
                 <br/>
-                <div class="col-md-6 col-md-offset-3 input-group input-group-lg">
+                <div class="col-md-6 col-md-offset-3 input-group input-group-lg" id="join">
                     <span class="input-group-btn">
-                        <button class="btn btn-warning" type="button">Join</button>
+                        <button class="btn btn-warning" type="submit">Join</button>
                     </span>
                     <input autofocus type="text" class="form-control" placeholder="jean.doe@example.com">
+                </div>
+                <div class="col-md-6 col-md-offset-3" id="thankyou" style="display:none;">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Thank you!
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

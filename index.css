@@ -11,13 +11,13 @@ body {
 }
 
 #headline {
-    background-image:url(maldives.jpg);
-    background-size:cover;
+    color: #FF9933;
+    background-color: white;
     padding: 2em;
 }
 
 .pad-lg {
-    padding: 3em;
+    padding-bottom: 3em;
 }
 
 .pad-sm {
@@ -28,6 +28,10 @@ body {
     margin: 0px;
 }
 
+#thankyou {
+    color: black;
+}
+
 .vp {
-    height: 14em;
+    padding: 1em;
 }
