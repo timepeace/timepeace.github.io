@@ -19,6 +19,7 @@ var readyHandler = function() {
 var submit = function() {
     var email = encodeURIComponent($("#join input").val());
     $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
+    _qaq.push(['_trackEvent', 'CTA', 'Join']);
     $('#thankyou').show();
     $('#join').hide();
 };
