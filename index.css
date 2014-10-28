@@ -1,9 +1,11 @@
 body {
-    background-color: black;
+    background-color: #FFCCFF;
 }
 
 #cta {
+    background-color: black;
     color: white;
+    height: 12em;
 }
 
 .jumbotron-custom-padding {
