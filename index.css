@@ -5,21 +5,14 @@ body {
 #cta {
     background-color: black;
     color: white;
-    height: 12em;
-}
-
-.jumbotron-custom-padding {
-    padding: 0em;
+    height: 13em;
+    padding-bottom: 1em;
 }
 
 #headline {
     color: #FF9933;
     background-color: white;
     padding: 2em;
-}
-
-.pad-lg {
-    padding-bottom: 3em;
 }
 
 .pad-sm {
@@ -35,5 +28,5 @@ body {
 }
 
 .vp {
-    padding: 1em;
+    padding-bottom: 1em;
 }
