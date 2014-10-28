@@ -19,12 +19,15 @@
             <div class="pad-sm row" id="cta">
                 <h2>Sign up now, get early access</h2>
                 <br/>
-                <div class="col-md-6 col-md-offset-3 input-group input-group-lg" id="join">
-                    <span class="input-group-btn">
-                        <button class="btn btn-warning" type="submit">Join</button>
-                    </span>
-                    <input autofocus type="text" class="form-control" placeholder="jean.doe@example.com">
-                </div>
+                <iframe id="no-target" name="no-target" src="#" style="display:none;"></iframe>
+                <form action="" id="join" method="POST" target="no-target">
+                    <div class="col-md-6 col-md-offset-3 input-group input-group-lg">
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning" type="submit">Join</button>
+                        </span>
+                        <input autofocus type="text" class="form-control" placeholder="jean.doe@example.com">
+                    </div>
+                </form>
                 <div class="col-md-6 col-md-offset-3" id="thankyou" style="display:none;">
                     <div class="panel panel-default">
                         <div class="panel-body">

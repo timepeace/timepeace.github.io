@@ -13,22 +13,14 @@ var joinTextInputHandler = function(e) {
 };
 
 var readyHandler = function() {
-    $('#join').delegate('button', 'click', joinButtonHandler);
-    $('#join').delegate('input', 'keyup', joinTextInputHandler);
+    $('#cta').delegate('form', 'submit', submit);
 };
 
 var submit = function() {
     var email = encodeURIComponent($("#join input").val());
-    var data = {};
-    data[googleFormEmailEntry] = email;
-    $.ajax(googleFormUrl, {
-        data: data,
-        dataType: 'xml',
-        type: 'POST'
-    }).done(function() {
-        $("#join").hide();
-        $("#thankyou").show();
-    });
+    $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
+    $('#thankyou').show();
+    $('#join').hide();
 };
 
 $(readyHandler);
