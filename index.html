@@ -11,37 +11,51 @@
         <title>TimePeace</title>
     </head>
     <body>
-        <div class="container-fluid text-center">
-            <div class="row" id="headline">
-                <h1>TimePeace</h1>  
-                <p>The missing peace of time management</p>
-            </div>
-            <div class="pad-sm row" id="cta">
-                <h2>Join now, get early access</h2>
-                <br/>
-                <iframe id="no-target" name="no-target" src="#" style="display:none;"></iframe>
-                <form action="" id="join" method="POST" target="no-target">
-                    <div class="col-md-6 col-md-offset-3 input-group input-group-lg">
-                        <span class="input-group-btn">
-                            <button class="btn btn-warning" type="submit">Join</button>
-                        </span>
-                        <input autofocus type="text" class="form-control" placeholder="jean.doe@example.com">
-                    </div>
-                </form>
-                <div class="col-md-6 col-md-offset-3" id="thankyou" style="display:none;">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            Thank you!
-                        </div>
-                    </div>
+        <div class="navbar navbar-default navbar-fixed-top" id="nav" role="navigation" style="margin-bottom: 0px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TimePeace</a>
                 </div>
             </div>
+        </div>
+        <div class="jumbotron text-center" style="margin-bottom:0px;">
+            <div class="container-fluid">
+                <div class="pad-sm row" id="cta">
+                    <h2 id="headline">
+                        <span style="font-weight:bold">The Missing Peace In Your Calendar</span>
+                        <br/>
+                        <small>Reset your mood in just 30 seconds with mindful
+                            work breaks<br/>delivered to your calendar, email or
+                            phone.</small>
+                        <br/>
+                        <br/>
+                        <iframe id="no-target" name="no-target" src="#" style="display:none;"></iframe>
+                        <form action="" id="join" method="POST" target="no-target">
+                            <div class="col-md-6 col-md-offset-3 input-group input-group-lg">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning" type="submit">Join</button>
+                                </span>
+                                <input autofocus type="text" class="form-control" placeholder="Enter your email for early access!">
+                            </div>
+                        </form>
+                        <div class="col-md-6 col-md-offset-3" id="thankyou" style="display:none;">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    Thank you!
+                                </div>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
             <div class="row pad-sm" style="background-color:#99FFCC;">
                 <div class="col-md-6 col-md-offset-3">
                     <h4 class="text-uppercase">Event preparation</h4>
                     <p>Don't let stress or anxiety get in the way of preparing
-                    for important events like job interviews or exams. We'll
-                    help you stay focused, and break your milestones down
+                    for important events like job interviews or exams. TimePeace
+                    helps you stay focused, and breaks your milestones down
                     into bite-sized tasks.</p>
                 </div>
             </div>
@@ -58,7 +72,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <h4 class="text-uppercase">Calendar integration</h4>
                     <p>Love your existing time management system? No problem.
-                    Our platform integrates with your favorite calendar, such as
+                    TimePeace integrates with your favorite calendar, such as
                     Google, Apple, and Sunrise.</p>
                 </div>
             </div>

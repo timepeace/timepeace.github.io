@@ -1,15 +1,8 @@
-body {
-    background-color: #FFCCFF;
-}
-
 #cta {
-    background-color: black;
-    color: white;
 }
 
 #headline {
     color: #FF9933;
-    background-color: white;
     padding: 2em;
 }
 
@@ -22,7 +15,6 @@ body {
 }
 
 #thankyou {
-    color: black;
 }
 
 .vp {
