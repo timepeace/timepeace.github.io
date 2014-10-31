@@ -1,4 +1,7 @@
 #cta {
+    background-image: url(./timepeace_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #headline {
