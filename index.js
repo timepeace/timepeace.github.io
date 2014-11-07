@@ -13,13 +13,6 @@ var joinTextInputHandler = function(e) {
 
 var readyHandler = function() {
     $('#cta').delegate('form', 'submit', submit);
-    var parsedQuery = queryString.parse(location.search);
-
-    if('uvp' in parsedQuery) {
-        console.log(parsedQuery['uvp']);
-        $('#headline .uvp').hide();
-        $('#' + parsedQuery['uvp']).show();
-    }
 };
 
 var submit = function() {
