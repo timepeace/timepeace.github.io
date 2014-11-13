@@ -22,12 +22,14 @@
         <script>utmx('url','A/B');</script>
         <!-- End of Google Analytics Content Experiment code -->
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="index.css">
         <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="index.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>TimePeace</title>
     </head>
@@ -45,12 +47,19 @@
                     <h2 class="col-md-offset-3" id="headline">
                         <span style="font-weight:bold">The Missing Peace In Your Calendar</span>
                         <br/>
-                        <small>Reset your mood in 
-                            just 30 seconds with mindful work breaks
-                            <br/>delivered to your calendar, email or
-                            phone</small>
+                        <small>
+                            <span class="uvp" id="resetyourmood">
+                                Reset your mood in just 30 seconds with mindful work breaks
+                                <br/>delivered to your calendar, email or phone 
+                            </span>
+                            <span class="hide uvp" id="collegeanxiety">
+                                The time management and anxiety coping tool for college 
+                                students<br/>that helps you stop procrastinating and 
+                                prepare for tests without the stress
+                            </span>
+                        </small>
                         <br/>
-                        <br/>
+                    <br/>
                         <form action="" id="join" method="POST" target="no-target">
                             <div class="col-md-8 col-md-offset-2 input-group input-group-lg">
                                 <span class="input-group-btn">

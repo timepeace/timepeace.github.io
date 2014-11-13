@@ -1,6 +1,18 @@
 var googleFormEmailEntry = 'entry.897871725';
 var googleFormUrl = 'https://docs.google.com/forms/d/1Duae8q3dBV8TAo9AfJpxvZRsF7j8NNw8GliEkTJUX6A/formResponse';
 
+var Router = Backbone.Router.extend({
+    routes: {
+        "variant/:section/:id": "variant"
+    },
+
+    variant: function(section, id) {
+        $('.' + section).hide();
+        $('#' + id + '.' + section).show().removeClass('hide');
+    }
+});
+
+
 var joinButtonHandler = function(e) {
     submit();
 };
@@ -12,6 +24,9 @@ var joinTextInputHandler = function(e) {
 };
 
 var readyHandler = function() {
+    var router = new Router();
+    Backbone.history.start();
+
     $('#cta').delegate('form', 'submit', submit);
 };
 
