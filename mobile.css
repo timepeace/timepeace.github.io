@@ -1,0 +1,33 @@
+body {
+    background-image: url(./wood.jpg);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+#catchphrase {
+    color: #6633CC;
+}
+
+#cta {
+    background: rgb(238, 238, 238);
+    background: rgba(238, 238, 238, .75);
+    position: absolute;
+    text-shadow: 0px 2px 2px rgba(150, 152, 150, 1);
+    top: 0px;
+}
+
+#headline {
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.pad {
+    padding: 1em;
+}
