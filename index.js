@@ -31,9 +31,9 @@ var readyHandler = function() {
 };
 
 var submit = function() {
-//    ga('send', 'event', 'CTA', 'Join');
+    ga('send', 'event', 'CTA', 'Join');
     var email = encodeURIComponent($(".join input").val());
-//    $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
+    $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
     $('.thankyou').show();
     $('.join').hide();
 };
