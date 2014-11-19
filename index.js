@@ -27,15 +27,15 @@ var readyHandler = function() {
     var router = new Router();
     Backbone.history.start();
 
-    $('#cta').delegate('form', 'submit', submit);
+    $('form.join').on('submit', submit);
 };
 
 var submit = function() {
-    ga('send', 'event', 'CTA', 'Join');
-    var email = encodeURIComponent($("#join input").val());
-    $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
-    $('#thankyou').show();
-    $('#join').hide();
+//    ga('send', 'event', 'CTA', 'Join');
+    var email = encodeURIComponent($(".join input").val());
+//    $(this)[0].action = (googleFormUrl + '?' + googleFormEmailEntry + '=' + email + '&submit=submit');
+    $('.thankyou').show();
+    $('.join').hide();
 };
 
 var yieldFocus = function() {
