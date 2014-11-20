@@ -8,6 +8,18 @@ body {
     margin-top: 50px;
 }
 
+.bottom-arrow {
+    background: url(../images/utilities/bottom-arrow.png) no-repeat;
+    display: block;
+    height: 20px;
+    margin-top: -80px;
+    position: absolute;
+    width: 54px;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -27px;
+}
+
 #catchphrase {
     color: #6633CC;
 }
