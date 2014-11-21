@@ -12,6 +12,11 @@ var Router = Backbone.Router.extend({
     }
 });
 
+var install = function() {
+    ga('send', 'event', 'CTA', 'Install');
+    $('.install').hide();
+    $('.join').show();
+}
 
 var joinButtonHandler = function(e) {
     submit();
@@ -27,6 +32,7 @@ var readyHandler = function() {
     var router = new Router();
     Backbone.history.start();
 
+    $('button.install').on('click', install);
     $('form.join').on('submit', submit);
 };
 
