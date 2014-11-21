@@ -16,7 +16,7 @@ var install = function() {
     ga('send', 'event', 'CTA', 'Install');
     $('.install').hide();
     $('.join').show();
-}
+};
 
 var joinButtonHandler = function(e) {
     submit();
@@ -28,11 +28,16 @@ var joinTextInputHandler = function(e) {
     }
 };
 
+var readmore = function() {
+    ga('send', 'event', 'CTA', 'Read More');
+};
+
 var readyHandler = function() {
     var router = new Router();
     Backbone.history.start();
 
     $('button.install').on('click', install);
+    $('div.readmore').on('click', readmore);
     $('form.join').on('submit', submit);
 };
 
